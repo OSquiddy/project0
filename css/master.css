@@ -1,0 +1,17 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+h4 {
+  font-weight: normal;
+  text-align: center;
+}
+
+td, th{
+  text-align: center;
+  padding-left: 5px;
+  padding-right: : 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
