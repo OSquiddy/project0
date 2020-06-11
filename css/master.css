@@ -2,7 +2,7 @@ h1 {
   color: blue;
   text-align: center;
 }
-h4 {
+h4.text {
   font-weight: normal;
   text-align: center;
 }
@@ -13,5 +13,48 @@ td, th{
   padding-right: : 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+
+}
+#Introduction{
+  border-radius: 5px;
+}
+@media only screen {
+  /* For mobiles: */
+  .navbar-expand-sm{
+    display: block;
+  }
+  .navbar-nav {
+    display: flex;
+  }
+
+  #Content {
+    order:2;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+  #Summary {
+    order:1;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .navbar-expand-sm{
+    display: flex;
+  }
+  #Content {
+    order:1;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #Summary {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* For desktop: */
 
 }
