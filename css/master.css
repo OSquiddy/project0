@@ -1,5 +1,5 @@
 h1 {
-  color: blue;
+  color:#981b27;
   text-align: center;
 }
 h4.text {
@@ -16,7 +16,7 @@ td, th{
 
 }
 footer{
-  margin-bottom: -10;
+  /* margin-bottom: -10; */
   text-align: center;
   padding: 10px;
 }
@@ -30,11 +30,8 @@ footer{
     padding-top: 1rem; */
     /* position: sticky; */
     padding: 0 0 0 0;
-    padding-left: 10px;
 }
-#menu.sticky-top {
-  margin-right: 0px;
-}
+
 
 #menu a{
   display: block;
@@ -58,7 +55,38 @@ footer{
   background-color: #dc3545;
   /* background-color: #eee; */
 }
-@media only screen {
+small {
+  font-size: 16px;
+  align-self: center;
+  margin-left: 10px;
+}
+html {
+  height: 100%;
+
+}
+body {
+  position: relative;
+  bottom: 0;
+  min-height: 100%;
+  padding-bottom: 44px;
+
+}
+#main-body {
+  margin-bottom: 50px;
+
+}
+main {
+  /* margin-bottom: 68px; */
+
+}
+footer {
+  position: absolute;
+  width: 100%;
+  margin: 0 0 0 0;
+  bottom:0;
+
+}
+@media only screen and (max-width: 768px){
   /* For mobiles: */
   .navbar-expand-sm{
     display: block;
@@ -78,23 +106,16 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
   }
-}
-@media only screen and (min-width: 768px) {
-  /* For tablets: */
-  .navbar-expand-sm{
+  #menu {
+    display: none;
+  }
+  #racism-short {
     display: flex;
   }
-  #Content {
-    order:1;
-    margin-left: 0px;
-    margin-right: 0px;
+  #racism-long {
+    display: none;
   }
-  #Summary {
-    margin-left: 0px;
-    margin-right: 0px;
+  body {
+    padding-bottom: 70px;
   }
-}
-@media only screen and (min-width: 992px) {
-  /* For desktop: */
-
 }
