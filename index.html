@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css\master.css">
+        <link rel="stylesheet" href="css\variables.css">
     </head>
     <body>
         <nav id="NavigationBar" class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -17,10 +18,12 @@
 
         </nav>
         <div id="Heading" class="jumbotron text-center my-3">
-          <h1 class = "mx-3 display-2">Omar's Profile</h1>
-          <h4 class="text">This is the main page of my website, that has been created for the purpose of <kbd>project0</kbd></h4>
+          <h1 id="headline-widescreen" class = "mx-3 display-2">Omar's Profile</h1>
+          <h1 id="headline-mobile" class = "mx-3">Omar's Profile</h1>
+          <h4 id="headline-text">This is the main page of my website, that has been created for the purpose of <kbd>project0</kbd></h4>
+          <h6 id="headline-text-mobile">This is the main page of my website, that has been created for the purpose of <kbd>project0</kbd></h6>
         </div>
-        <div id="Introduction" class=" mx-5 my-3 px-3  bg-warning">
+        <div id="Introduction" class="mx-auto px-3">
           <p>
             I am a soon to be 23 year old engineering graduate with dreams of transitioning into the Computer Science field.
             Been studying on my own to get the skills necessary to land me a good job in the industry, seeing as my plans for
@@ -54,12 +57,13 @@
             </table>
           </div>
         </div>
-        <div id="Body" class="mx-5 my-3">
+        <div id="Body" class="mx-auto px-3">
           <br>
           <p> There is not a lot to do on this page. I suggest you use the table to move on to the next pages. Or alternatively,
-          you can click here. </p>
-          <p>Lol just kidding. That link won't take you anywhere. You <i>should</i> go back to the table.</p>
+          you can click here.
+          <br>
+          Lol just kidding. That link won't take you anywhere. You <i>should</i> go back to the table.</p>
         </div>
-        <footer class="bg-dark" style="color:white;">This is a collection of my ramblings. Not to be taken seriously.</footer>
+        <footer class="bg-dark">This is a collection of my ramblings. Not to be taken seriously.</footer>
     </body>
 </html>
