@@ -1,3 +1,2 @@
-# Project 0
+OSquiddy
 
-Web Programming with Python and JavaScript
