@@ -3,90 +3,196 @@
     <head>
         <title>Omar's Profile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css\master.css">
         <link rel="stylesheet" href="css\variables.css">
     </head>
     <body>
-        <nav id="NavigationBar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav id="NavigationBar" class="navbar navbar-expand-sm navbar-dark">
           <a class="navbar-brand" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/index.html">Home</a>
           <ul class="navbar-nav">
             <li class="nav-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/education.html">Education</a> </li>
             <li class="nav-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/myviews.html"> My Views </a> </li>
             <li class="nav-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/hobbies.html"> Hobbies </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/aboutme.html"> About Me </a> </li>
           </ul>
-
         </nav>
-        <div id="Heading" class="jumbotron text-center my-3">
-          <h1 id="headline-widescreen" class = "mx-3 display-2">Omar's Profile</h1>
-          <h1 id="headline-mobile" class = "mx-3">Omar's Profile</h1>
+        <div class="jumbotron mb-5 mx-auto text-center" style="background-image: url(images/grey-bg.jpg); border-radius: 0;">
+          <h1 id="headline-widescreen" class = "heading display-2">Omar Siddiqui</h1>
+          <h1 id="headline-mobile">Omar Siddiqui</h1>
           <h4 id="headline-text">This is the main page of my website, that has been created for the purpose of <kbd>project0</kbd></h4>
           <h6 id="headline-text-mobile">This is the main page of my website, that has been created for the purpose of <kbd>project0</kbd></h6>
         </div>
-        <div id="Introduction" class="mx-auto px-3">
-          <p style="text-align: justify ">
-            I am a soon to be 23 year old engineering graduate with dreams of transitioning into the Computer Science field.
-            Been studying on my own to get the skills necessary to land me a good job in the industry, seeing as my plans for
-            enrollment into a Master's course have been postponed because of this pandemic.
-          </p>
-          Given below is a list of software skills that I have picked up and that I plan to
-          pick up in the coming few months.
-        </div>
-        <div id="Table">
-          <div class="table-responsive-sm">
-            <table class="table mx-auto table-striped table-bordered">
-              <thead class="thead-dark">
-                <tr>
-                  <th>Technology</th>
-                  <th>Learning Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Java</td>
-                  <td>Intermediate</td>
-                </tr>
-                <tr>
-                  <td>C/C++</td>
-                  <td>Beginner</td>
-                </tr>
-                <tr>
-                  <td>C#</td>
-                  <td>Beginner</td>
-                </tr>
-                <tr>
-                  <td>HTML/CSS</td>
-                  <td>Beginner</td>
-                </tr>
-                <tr>
-                  <td>React.js/Vue</td>
-                  <td>Planned</td>
-                </tr>
-                <tr>
-                  <td>Django</td>
-                  <td>Planned</td>
-                </tr>
-                <tr>
-                  <td>Python</td>
-                  <td>Planned</td>
-                </tr>
-              </tbody>
-            </table>
+        <div id="center-tiles" class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div id="Profile-container" class="image-container rounded">
+                <div class="img-box" >
+                  <img class="widescreen-me rounded-circle" src="images/me2.jpg" alt="author-image" style="height: 205px; object-fit:contain;
+                  transform: scale(0.7,0.7)">
+                  <img class="mobile-me rounded-circle" src="images/me2.jpg" alt="author-image">
+                </div>
+                <div id="profile-info">
+                  <div class="img-title">
+                    <h4 style="font-weight: 400">OSquiddy</h4>
+                    <h6>OSquiddy</h6>
+                    <p class="card-text" style="font-size: 14px">If you can't access Git, you probably have <i>commit</i>ment issues.</p>
+                    <a id="profile-button" class="btn" href="https://github.com/OSquiddy" target="_blank">See Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 tile-container" >
+              <a href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/education.html">
+              <div class="row tile ">
+                <div class="col-md-1">
+                  <img class="arrow" src="images/arrow.png" alt="fskfjsl" style="width: 30px; object-fit: contain;">
+                </div>
+                <div class="col-md-10">
+                  <h5 class="align-self-center heading">Education</h5>
+                  My thoughts about the journey of my education and a brief history of where I gained it.
+                </div>
+              </div>
+            </a>
+            <a href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/myviews.html">
+              <div class="row tile ">
+                <div class="col-md-1">
+                  <img class="arrow" src="images/arrow.png" alt="fskfjsl" style="width: 30px; object-fit: contain;">
+                </div>
+                <div class="col-md-10">
+                  <h5 class="align-self-center heading">My Views</h5>
+                  General thoughts I've had about various topics. Think of them as mini-blogs.
+                </div>
+              </div>
+            </a>
+            <a href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/hobbies.html">
+              <div class=" row tile ">
+                <div class="col-md-1">
+                  <img class="arrow align-self "src="images/arrow.png" alt="fskfjsl" style="width: 30px; object-fit: contain; object-position: top;">
+                </div>
+                <div class="col-md-10">
+                  <h5 class="heading">My Hobbies</h5>
+                  A list of things I enjoy doing, or enjoyed doing at various moments in my life.
+                </div>
+              </div>
+            </a>
+            </div>
           </div>
         </div>
-        <div id="Body" class="mx-auto px-3">
-          <p>I'm currently trying to learn as many new technologies as possible. The main problem I'm facing is that the field is too vast.
-          I am currently unable to make up my mind between 4 disciplines:
-          <ul>
-            <li>Software Development</li>
-            <li>Web Development</li>
-            <li>Cloud Computing</li>
-            <li>Game Development</li>
-          </ul>
-          I have dabbled in all 4 fields and have enjoyed my experience in all of them. However, this has resulted in my being confused as to which
-          field I ultimately want to pursue in my professional life.
-        </p>
+        <!-- <hr class=" w-100 d-md-none"> -->
+        <div class="container text-center my-5" style="color: #757575">
+          <h4 class="heading" style="color: black;">My Projects</h4>
+          A list of all the programming related certifications I've acquired.
+          <div class="row mt-3">
+            <ul class="project-list list-unstyled d-flex mt-3 pt-3">
+              <li class="project-li">
+                  <div style="width: 135px">
+                    <a href="https://www.youracclaim.com/users/mohammed-omar-siddiqui" >
+                    <img class="project-li-image" src="images/OCI-badge.jpg" alt="arrow">
+                    <h6>Cloud Computing</h6>
+                    <p> Oracle Cloud Infrastructure Foundations</p>
+                  </a>
+                  </div>
+              </li>
+              <li class="project-li">
+                  <div style="width: 135px">
+                    <a href="https://coursera.org/share/4e5d1a6b9659526e9f26f59dfd63efa7" >
+                    <img class="project-li-image" src="images/coursera.jpg" alt="arrow">
+                    <h6>Java</h6>
+                    <p>Duke: Solving Problems with Software</p>
+                  </a>
+                  </div>
+              </li>
+              <li class="project-li">
+                  <div style="width: 135px">
+                    <a href="https://coursera.org/share/0d785f4b1572ee21a2c76a2cd3bb5996" >
+                    <img class="project-li-image" src="images/coursera.jpg" alt="arrow">
+                    <h6>Java</h6>
+                    <p>Duke: Arrays, Lists and Structured Data</p>
+                  </a>
+                  </div>
+              </li>
+              <li class="project-li">
+                  <div style="width: 135px">
+                    <a href="https://coursera.org/share/aeca367d745c83957f89af21da2c8bee" >
+                    <img class="project-li-image" src="images/coursera.jpg" alt="arrow">
+                    <h6>Java</h6>
+                    <p>Duke: Principles of Sofware Design</p>
+                  </a>
+                  </div>
+              </li>
+              <li class="project-li">
+                  <div>
+                    <a href="#" style="width: 135px">
+                    <img class="project-li-image" src="images/edX.jpg" alt="arrow">
+                    <h6>Web Development</h6>
+                    <p>Harvard's CS50W</p>
+                  </a>
+                  </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <footer class="bg-dark">This is a collection of my ramblings. Not to be taken seriously.</footer>
+        <footer>
+          <div class="container text-center text-md-left" >
+            <div class="row mt-3">
+              <div class="col-md-4 mx-auto">
+                <h5 class="heading">Disclaimer</h5>
+                This is a collection of my ramblings. Not to be taken seriously.
+              </div>
+              <hr class="clearfix w-100 d-md-none">
+              <div class="col-md-2 mx-auto">
+                <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/aboutme.html"> About Me </a></h5>
+              </div>
+              <hr class="clearfix w-100 d-md-none">
+              <div class="col-md-2 mx-auto">
+                <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/education.html">Education</a></h5>
+              </div>
+              <hr class="clearfix w-100 d-md-none">
+              <div class="col-md-2 mx-auto">
+                <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/myviews.html"> My Views </a></h5>
+              </div>
+              <hr class="clearfix w-100 d-md-none">
+              <div class="col-md-2 mx-auto">
+                <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/hobbies.html"> Hobbies </a></li></h5>
+              </div>
+            </div>
+            <hr>
+            <ul class="list-unstyled list-inline text-center py-2">
+              <li class="list-inline-item">
+                <a  id="contactButton" href="file://C:/Users/siddi/Documents/HarvardCS50W/project0/contactme.html" class="btn btn-danger btn-rounded">Contact Me</a>
+              </li>
+            </ul>
+            <hr>
+            <ul class="list-unstyled list-inline text-center">
+              <li class="list-inline-item">
+                <h6 id="social-media-heading" class="mb-1">My Social Media: </h6>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1" href="#">
+                  <i class="fab fa-facebook-f"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1"  href="#">
+                  <i class="fab fa-twitter"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-inst mx-1"  href="#">
+                  <i class="fab fa-instagram"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1" href="#">
+                  <i class="fab fa-linkedin-in"> </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr>
+        </footer>
     </body>
 </html>

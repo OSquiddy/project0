@@ -3,22 +3,25 @@
 <head>
   <title>Hobbies</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="css\master.css">
   <link rel="stylesheet" href="css\variables.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav id="NavigationBar" class="navbar navbar-expand-sm navbar-dark">
     <a class="navbar-brand" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/index.html"> Home </a>
     <ul class="navbar-nav">
       <li class="navbar-item"><a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/education.html"> Education </a></li>
       <li class="navbar-item"><a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/myviews.html"> My Views </a></li>
       <li class="navbar-item"><a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/hobbies.html"> Hobbies </a></li>
+      <li class="nav-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/aboutme.html"> About Me </a> </li>
     </ul>
   </nav>
   <main>
     <div id="Read" class="mx-5 my-3">
-      <h2>Reading</h2>
+      <h2 class="heading">Reading</h2>
       <p>I'm a big fan of reading fantasy fiction. Loved that genre ever since I was a child, and haven't outgrown
         it yet. Harry Potter is a classic. Percy Jackson is one such other. One of my old favourites used to be the Inheritance Cycle
         but I haven't read it in a long time.
@@ -26,7 +29,7 @@
           <div class="image-container">
             <a class="wiki-link" href="https://en.wikipedia.org/wiki/Harry_Potter" target="_blank">
             <div class="img-box">
-              <img class="widescreen" src="images\HarryPotter.jpg" alt="harry-potter">
+              <img class="widescreen" src="images\HarryPotter.jpg" alt="harry-potter" >
                 <img class="mobile" src="images\HarryPotterShort.jpg" alt="harry-potter">
             </div>
             <div class="img-info">
@@ -124,20 +127,78 @@
     </p>
     </div>
     <div id="Exercise" class="mx-5 my-3">
-      <h2>Exercise</h2>
+      <h2 class="heading">Exercise</h2>
       <p>Exercizing your body is just as important as exercizing your mind. While reading and coding are good for you brain, they don't
         really do much for your body. My main form of exercize has been to hit the gym for the past few years, but before that I used to go
         swimming regularly. I've tried getting into calisthenics during this lockdown but I'm just not able to consistently do this everyday.
         That sucks.</p>
       </div>
       <div id="tv-shows" class="mx-5 my-3">
-        <h2>TV Shows</h2>
+        <h2 class="heading">TV Shows</h2>
         <p>Binge watching TV shows is always fun. It's how I'd seen Sherlock and Marvel's Daredevil for the first time. But there is something to be
         said about waiting for an episode to come out too. The anticipation is both something I hate and simultaneously love. I'd been following Game of Thrones
         since the third season. That's me watching a show over a period of 6 years. I absolutely loved it. Except for Season 8. That was the worst ending in the
         history of bad TV show endings.</p>
         </div>
     </main>
-    <footer class="bg-dark">This is a collection of my ramblings. Not to be taken seriously.</footer>
+    <footer>
+      <div class="container text-center text-md-left" >
+        <div class="row mt-3">
+          <div class="col-md-4 mx-auto">
+            <h5 class="heading">Disclaimer</h5>
+            This is a collection of my ramblings. Not to be taken seriously.
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-2 mx-auto">
+            <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/aboutme.html"> About Me </a></h5>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-2 mx-auto">
+            <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/education.html">Education</a></h5>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-2 mx-auto">
+            <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/myviews.html"> My Views </a></h5>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-2 mx-auto">
+            <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/hobbies.html"> Hobbies </a></li></h5>
+          </div>
+        </div>
+        <hr>
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <a id="contactButton" href="file://C:/Users/siddi/Documents/HarvardCS50W/project0/contactme.html" class="btn btn-danger btn-rounded">Contact Me</a>
+          </li>
+        </ul>
+        <hr>
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <h6 id="social-media-heading" class="mb-1">My Social Media: </h6>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1" href="#">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1"  href="#">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1"  href="#">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1" href="#">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </footer>
   </body>
   </html>

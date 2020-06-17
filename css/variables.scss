@@ -1,8 +1,13 @@
-$dark-red: #981b27;
-$menu-red: #dc3545;
+$dark-red: #990000;
+$bright-red: #cc0000;
+$menu-red: #ff3547;
+$bootstrap-red: #dc3545;
 $grey-border: 1px solid lightgrey;
 $jumbotron-grey: #eee;
+$footer-dark: #212121;
+$greyfont: #757575;
 
+// Inheritance example
 %menustyle {
   display: block;
   font-size: 20px;
@@ -17,15 +22,29 @@ $jumbotron-grey: #eee;
 }
 
 h1 {
-  color:$dark-red;
+  color:$bright-red;
   text-align: center;
 }
-
+// SASS Nesting Example
+footer {
+  background-color: $footer-dark;
+  a {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
 .image-container {
   width: 200px;
   border: $grey-border;
   box-shadow: 0 1px 2px  lightgrey;
-  margin: 10px 10px;
+  margin: 10px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 6px;
+  }
+  // transform: scale(0.8,0.8);
   .img-box {
     width: 100%;
     height: 293px;
@@ -51,17 +70,66 @@ h1 {
    text-decoration: none;
    color: black;
    &:hover {
-     color: $menu-red;
+     color: $bright-red;
      text-decoration: none;
    }
  }
+ .project-list {
+   margin: auto;
+   overflow-x: auto;
+   .project-li {
+     margin: 0 15px 0;
+     a {
+       text-decoration: none;
+      h6 {color: black;}
+      p {color: $greyfont;}
+     }
+     .project-li-image{
+       object-fit: contain;
+       margin-bottom: 15px;
+       height: 135px;
+       &:hover {
+        transform: scale(1.1,1.1);
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
+        border-radius: 80px
+      }
+      p {
+        font-size: 12px;
+        color: $greyfont;
+      }
+     }
+   }
+ }
+ .tile-container {
+   a:hover {
+     text-decoration: none;
+   }
+ }
+.form-input {
+     color: #757575;
+     width: 100%;
+     font-size: 16px;
+     font-weight: 300;
+     margin: 0 0 8px 0;
+     line-height: 24px;
+   }
+#form-submit-button {
+  border: 2px solid $bright-red;
+  border-radius: 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 11px 34px;
+  color: #757575;
+}
 #menu{
+  color: white;
+  background-color: $dark-red;
   padding: 0;
   a {
     @extend %menustyle;
     &:hover {
       color: white;
-      background-color: $menu-red;
+      background-color: $bright-red;
     }
   }
 }
@@ -72,15 +140,63 @@ h1 {
   color: white;
   background-color: $dark-red;
 }
+#Profile-container {
+  margin: 0px 20px 10px auto;
+  // transform: scale(1.15,1.15);
+  .img-box {
+    height: 190px;
+  }
+  .mobile-me {
+    display: none;
+  }
+}
+#profile-info {
+  padding: 10px;
+  text-align: center;
+  color: grey;
+  h6 {
+    display: none;
+  }
+  h4 {
+    color: black;
+  }
+  #profile-button {
+    background-color: $bright-red;
+    color: #fff;
+    margin-bottom: 16px;
+    &:hover {
+      background-color: $dark-red;
+    }
+  }
+}
+#NavigationBar {
+  background-color: $footer-dark;
+}
+#contact-header{
+  background-color: $bright-red;
+  font-family:'Roboto';
+  font-weight: 300;
+}
+#contactButton {
+  font-size: 13px;
+  background-color: $bright-red;
+  padding: 13px 34px;
+  text-transform: uppercase;
+  color: white;
+  &:hover{
+    color: black;
+  }
+}
 
 /* ----------------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 768px){
   /* For mobiles: */
   .image-container {
     width: 205px;
     border: $grey-border;
     box-shadow: 0 1px 2px  lightgrey;
-    margin: 10px 10px;
+    margin: 10px;
+    // transform: scale(1.2,1.2);
     .img-box {
       width: 100%;
       height: 100px;
@@ -89,6 +205,8 @@ h1 {
           display: none;
         }
         &.mobile {
+          width: 100%;
+          object-fit: fill;
           display: block;
         }
       }
@@ -98,7 +216,65 @@ h1 {
       display: none;
     }
   }
+  .project-list {
+    justify-content: center;
+    overflow-x: scroll;
+    .project-li {
+      margin: 0 15px 0;
+    }
+  }
+
   #menu {
     display: none;
+  }
+  #Profile-container {
+    width: 100%;
+    margin: 16px auto;
+    // display: flex;
+    .widescreen-me {
+      display: none;
+    }
+    .img-box {
+      // border: 1px solid black;
+      // display: none;
+      // width: 40%;
+      height: 50%;
+      .mobile-me {
+        margin: auto;
+        display: flex;
+        width: 136px;
+        height: 140px;
+        object-fit: contain;
+        transform: scale(0.75,0.75);
+      }
+    }
+
+  }
+  #center-tiles {
+    padding: 0;
+    .row {
+      margin: 16px 0;
+
+    }
+  }
+  #profile-info  {
+    // transform: scale(0.85,0.85);
+    font-size: 16px;
+    text-align: center;
+    display: inherit;
+    h6 {
+      color: black;
+      display: inherit;
+    }
+    h4 {
+      display: none;
+    }
+    .card-text {
+      // display: none;
+    }
+    #profile-button {
+      font-size: 12px;
+      margin: 0;
+    }
   }
 }

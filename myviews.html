@@ -3,35 +3,37 @@
 <head>
   <title>My Views</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css\master.css">
   <link rel="stylesheet" href="css\variables.css">
 </head>
 <body>
-  <nav id="navBar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav id="NavigationBar" class="navbar navbar-expand-sm navbar-dark">
     <a class="navbar-brand" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/index.html">Home</a>
     <ul class="navbar-nav">
       <li class="navbar-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/education.html"> Education </a></li>
       <li class="navbar-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/myviews.html"> My Views </a></li>
       <li class="navbar-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/hobbies.html"> Hobbies </a></li>
+      <li class="nav-item"> <a class="nav-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/aboutme.html"> About Me </a> </li>
     </ul>
   </nav>
   <div class="row mx-auto">
-    <div id="menu" class="col-md-2" style="color:white; background-color:#981b27;">
+    <div id="menu" class="col-md-2">
       <div class="sticky-top">
         <a href="#sports">Sports</a>
         <a href="#racism">Racism</a>
         <a href="#anime">Anime</a>
         <a href="#gaming">Gaming</a>
         <a href="#traveling">Traveling</a>
-        <a href="#navBar">Top</a>
+        <a href="#NavigationBar">Top</a>
       </div>
     </div>
     <div id="myviews-content" class="col-md-10">
       <div id="sports" class="content-paras order-last">
         <div id="small-nav-links" class="d-flex">
-          <h2>Sports</h2>
-          <small>[<a href="#navBar">prev</a>]</small>
+          <h2 class="heading">Sports</h2>
           <small>[<a href="#navBar">top</a>]</small>
           <small>[<a href="#racism">next</a>]</small>
         </div>
@@ -48,8 +50,8 @@
         </div>
         <div id="racism" class="content-paras">
           <div class="d-flex">
-            <h2 class="widescreen-heading">Racism and Other Discrimination</h2>
-            <h2 class="mobile-heading">Racism</h2>
+            <h2 class="heading widescreen-heading">Racism and Other Discrimination</h2>
+            <h2 class="heading mobile-heading">Racism</h2>
             <small>[<a href="#sports">prev</a>]</small>
             <small>[<a href="#navBar">top</a>]</small>
             <small>[<a href="#racism">next</a>]</small>
@@ -61,8 +63,8 @@
           </div>
           <div id="anime" class="content-paras">
             <div class="d-flex">
-              <h2 class="widescreen-heading">Animated Movies/Shows</h2>
-              <h2 class="mobile-heading">Anime</h2>
+              <h2 class="heading widescreen-heading">Animated Movies/Shows</h2>
+              <h2 class="heading mobile-heading">Anime</h2>
               <small>[<a href="#racism">prev</a>]</small>
               <small>[<a href="#navBar">top</a>]</small>
               <small>[<a href="#gaming">next</a>]</small>
@@ -77,7 +79,7 @@
             </div>
             <div id="gaming" class="content-paras">
               <div class="d-flex">
-                <h2>Gaming</h2>
+                <h2 class="heading">Gaming</h2>
                 <small>[<a href="#anime">prev</a>]</small>
                 <small>[<a href="#navBar">top</a>]</small>
                 <small>[<a href="#traveling">next</a>]</small>
@@ -98,10 +100,9 @@
             </div>
             <div id="traveling" class="content-paras">
               <div class="d-flex">
-                <h2>Traveling</h2>
+                <h2 class="heading">Traveling</h2>
                 <small>[<a href="#gaming">prev</a>]</small>
-                <small>[<a href="#navBar">top</a>]</small>
-                <small>[<a href="#clothing">next</a>]</small>
+                <small>[<a href="#NavigationBar">top</a>]</small>
               </div>
               <p>Exploring the world is something that every person must try to do at least once in their lifetimes. Maybe take a year off after highschool
               or perhaps volunteer to work for an NGO abroad, or even try to go abroad as a foreign exchange student. It is a vital step to growing as a person:
@@ -112,6 +113,64 @@
           </div>
         </div>
       </div>
-      <footer class="bg-dark">This is a collection of my ramblings. Not to be taken seriously.</footer>
+      <footer>
+        <div class="container text-center text-md-left" >
+          <div class="row mt-3">
+            <div class="col-md-4 mx-auto">
+              <h5 class="heading">Disclaimer</h5>
+              This is a collection of my ramblings. Not to be taken seriously.
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 mx-auto">
+              <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/aboutme.html"> About Me </a></h5>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 mx-auto">
+              <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/education.html">Education</a></h5>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 mx-auto">
+              <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/myviews.html"> My Views </a></h5>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 mx-auto">
+              <h5 class="heading"><a class="footer-link" href="file:///C:/Users/siddi/Documents/HarvardCS50W/project0/hobbies.html"> Hobbies </a></li></h5>
+            </div>
+          </div>
+          <hr>
+          <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+              <a id="contactButton" href="file://C:/Users/siddi/Documents/HarvardCS50W/project0/contactme.html" class="btn btn-danger btn-rounded">Contact Me</a>
+            </li>
+          </ul>
+          <hr>
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <h6 id="social-media-heading" class="mb-1">My Social Media: </h5>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-fb mx-1" href="#">
+                <i class="fab fa-facebook-f"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-tw mx-1"  href="#">
+                <i class="fab fa-twitter"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-gplus mx-1"  href="#">
+                <i class="fab fa-google-plus-g"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-li mx-1" href="#">
+                <i class="fab fa-linkedin-in"> </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+      </footer>
     </body>
     </html>

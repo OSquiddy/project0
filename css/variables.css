@@ -12,15 +12,29 @@
 }
 
 h1 {
-  color: #981b27;
+  color: #cc0000;
   text-align: center;
+}
+
+footer {
+  background-color: #212121;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .image-container {
   width: 200px;
   border: 1px solid lightgrey;
   box-shadow: 0 1px 2px lightgrey;
-  margin: 10px 10px;
+  margin: 10px;
+}
+.image-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 6px;
 }
 .image-container .img-box {
   width: 100%;
@@ -48,16 +62,71 @@ h1 {
   color: black;
 }
 .wiki-link:hover {
-  color: #dc3545;
+  color: #cc0000;
   text-decoration: none;
 }
 
+.project-list {
+  margin: auto;
+  overflow-x: auto;
+}
+.project-list .project-li {
+  margin: 0 15px 0;
+}
+.project-list .project-li a {
+  text-decoration: none;
+}
+.project-list .project-li a h6 {
+  color: black;
+}
+.project-list .project-li a p {
+  color: #757575;
+}
+.project-list .project-li .project-li-image {
+  object-fit: contain;
+  margin-bottom: 15px;
+  height: 135px;
+}
+.project-list .project-li .project-li-image:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
+  border-radius: 80px;
+}
+.project-list .project-li .project-li-image p {
+  font-size: 12px;
+  color: #757575;
+}
+
+.tile-container a:hover {
+  text-decoration: none;
+}
+
+.form-input {
+  color: #757575;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 8px 0;
+  line-height: 24px;
+}
+
+#form-submit-button {
+  border: 2px solid #cc0000;
+  border-radius: 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 11px 34px;
+  color: #757575;
+}
+
 #menu {
+  color: white;
+  background-color: #990000;
   padding: 0;
 }
 #menu a:hover {
   color: white;
-  background-color: #dc3545;
+  background-color: #cc0000;
 }
 
 #main-body {
@@ -66,17 +135,68 @@ h1 {
 
 #Summary {
   color: white;
-  background-color: #981b27;
+  background-color: #990000;
+}
+
+#Profile-container {
+  margin: 0px 20px 10px auto;
+}
+#Profile-container .img-box {
+  height: 190px;
+}
+#Profile-container .mobile-me {
+  display: none;
+}
+
+#profile-info {
+  padding: 10px;
+  text-align: center;
+  color: grey;
+}
+#profile-info h6 {
+  display: none;
+}
+#profile-info h4 {
+  color: black;
+}
+#profile-info #profile-button {
+  background-color: #cc0000;
+  color: #fff;
+  margin-bottom: 16px;
+}
+#profile-info #profile-button:hover {
+  background-color: #990000;
+}
+
+#NavigationBar {
+  background-color: #212121;
+}
+
+#contact-header {
+  background-color: #cc0000;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+#contactButton {
+  font-size: 13px;
+  background-color: #cc0000;
+  padding: 13px 34px;
+  text-transform: uppercase;
+  color: white;
+}
+#contactButton:hover {
+  color: black;
 }
 
 /* ----------------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   /* For mobiles: */
   .image-container {
     width: 205px;
     border: 1px solid lightgrey;
     box-shadow: 0 1px 2px lightgrey;
-    margin: 10px 10px;
+    margin: 10px;
   }
   .image-container .img-box {
     width: 100%;
@@ -86,14 +206,67 @@ h1 {
     display: none;
   }
   .image-container .img-box img.mobile {
+    width: 100%;
+    object-fit: fill;
     display: block;
   }
   .image-container .img-info {
     display: none;
   }
 
+  .project-list {
+    justify-content: center;
+    overflow-x: scroll;
+  }
+  .project-list .project-li {
+    margin: 0 15px 0;
+  }
+
   #menu {
     display: none;
+  }
+
+  #Profile-container {
+    width: 100%;
+    margin: 16px auto;
+  }
+  #Profile-container .widescreen-me {
+    display: none;
+  }
+  #Profile-container .img-box {
+    height: 50%;
+  }
+  #Profile-container .img-box .mobile-me {
+    margin: auto;
+    display: flex;
+    width: 136px;
+    height: 140px;
+    object-fit: contain;
+    transform: scale(0.75, 0.75);
+  }
+
+  #center-tiles {
+    padding: 0;
+  }
+  #center-tiles .row {
+    margin: 16px 0;
+  }
+
+  #profile-info {
+    font-size: 16px;
+    text-align: center;
+    display: inherit;
+  }
+  #profile-info h6 {
+    color: black;
+    display: inherit;
+  }
+  #profile-info h4 {
+    display: none;
+  }
+  #profile-info #profile-button {
+    font-size: 12px;
+    margin: 0;
   }
 }
 
