@@ -1,3 +1,8 @@
+!!! Accidentally pushed to the master branch instead of the 
+branch we were supposed to push to. submit50 was not working 
+for me and I had to use git. This is the first time I'm using 
+this software, please ignore these mistakes. !!!
+
 CS50 Web Programming with Python and JavaScript
 
 Project 0 by OSquiddy.
